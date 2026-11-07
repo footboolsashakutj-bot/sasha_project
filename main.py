@@ -1,4 +1,9 @@
-import math as m
-x = int(input("Enter a number: "))
-print(f'Корень из', x, ' равен', m.sqrt(x))
+import random
+a = ''
+x = int(input('Enter a number: '))
+for i in range(x):
+    a += str(random.randint(0,9))
+print(a)
+
+
 
