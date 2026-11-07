@@ -1,4 +1,4 @@
 import math as m
-print(m.sqrt(9))
-print('ia lublu kyshati')
+x = int(input("Enter a number: "))
+print(f'Корень из', x, ' равен', m.sqrt(x))
 
