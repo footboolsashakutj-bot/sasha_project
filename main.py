@@ -1,15 +1,11 @@
-
-import artith_tasks
-g, otvet = artith_tasks.generate_task()
-g0 = g[0]
-g1 = g[1]
-g2 = g[2]
-print(g0, g1, g2)
-x = int(input("Enter a number: "))
-if x == otvet:
-    print('Правильно')
-else:
-    print(f'Неправильно, правильный ответ: {otvet}')
+from dice_stats import *
+n = int(input("Enter the number of rolls: "))
+element = [0] * 7
+result = simulate_rolls(n)
+for i in result:
+    element[i] += 1
+for i in range(1,7):
+    print(f"{i}: выпал {element[i]} раз")
 
 
 
