@@ -1,10 +1,16 @@
 import random
-a = []
-n = random.randint(1,10)
+posledovatelnost = []
+count = 0
+n = random.randint(1, 10)
 for i in range(n):
-    i = random.randint(1,6)
-    a.append(i)
-print(a)
+    posledovatelnost.append(random.choice(['O', 'P']))
+for g in posledovatelnost:
+    if g == 'O':
+        count += 1
+print(posledovatelnost)
+print(count)
+
+
 
 
 
