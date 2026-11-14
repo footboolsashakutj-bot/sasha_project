@@ -1,14 +1,20 @@
-import random
-posledovatelnost = []
-count = 0
-n = random.randint(1, 10)
-for i in range(n):
-    posledovatelnost.append(random.choice(['O', 'P']))
-for g in posledovatelnost:
-    if g == 'O':
-        count += 1
-print(posledovatelnost)
-print(count)
+
+import artith_tasks
+g, otvet = artith_tasks.generate_task()
+g0 = g[0]
+g1 = g[1]
+g2 = g[2]
+print(g0, g1, g2)
+x = int(input("Enter a number: "))
+if x == otvet:
+    print('Правильно')
+else:
+    print(f'Неправильно, правильный ответ: {otvet}')
+
+
+
+
+
 
 
 
