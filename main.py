@@ -1,11 +1,14 @@
-def repeat_text(text,times):
-    """повторяет текст times раз"""
-    if times >= 0:
-        return text * times
-assert repeat_text("hello", 2) == "hellohello"
-print(repeat_text("hello", 2))
-print(repeat_text("lol", 3))
-
+def max_of_two(a,b)->int:
+    """Возвращает большее число"""
+    if a>b:
+        return a
+    else:
+        return b
+assert max_of_two(2,3)==3
+assert max_of_two(31,-3)==31
+assert max_of_two(-1,1)==1
+print(max_of_two(2,3))
+print(max_of_two(31,-3))
 
 
 
