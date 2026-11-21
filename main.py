@@ -1,8 +1,12 @@
-def format_card(name:str,city:str,age:int)-> str:
-    """Возвращает информацию о человеке"""
-    return f"Имя: {name}\nгород: {city}\nвозраст: {age}"
-assert format_card("Joe", "Moscow", 24) == "Имя: Joe\nгород: Moscow\nвозраст: 24"
-print(format_card("Joe", "Moscow", 24))
+def safe_div(a: int, b: int) -> int:
+    """Проверка чтобы В не был нулем"""
+    assert b != 0
+    """Деление а на в"""
+    return a // b
+assert safe_div(2, 2) ==1
+assert safe_div(4, 2) ==2
+print(safe_div(4, 2))
+print(safe_div(4, 3))
 
 
 
