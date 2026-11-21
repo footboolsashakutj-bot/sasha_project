@@ -1,12 +1,14 @@
-def safe_div(a: int, b: int) -> int:
-    """Проверка чтобы В не был нулем"""
-    assert b != 0
-    """Деление а на в"""
-    return a // b
-assert safe_div(2, 2) ==1
-assert safe_div(4, 2) ==2
-print(safe_div(4, 2))
-print(safe_div(4, 3))
+def count_char(text: str, simbol: str) -> int:
+    """Сколько данного символа в тексте"""
+    count = 0
+    for char in text:
+        if char == simbol:
+            count += 1
+    return count
+assert count_char("banana","a")==3
+print(count_char("banana","a"))
+print(count_char("banana","b"))
+
 
 
 
