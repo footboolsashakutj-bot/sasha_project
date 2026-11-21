@@ -1,11 +1,11 @@
-def square(number: int) -> int:
-    """Возвращает квадрат числа"""
-    return number * number
-assert square(5) == 25
-assert square(9) == 81
-print(square(5))
-print(square(9))
-
+def is_even(number: int) -> bool:
+    """Четное ли число?"""
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+print(is_even(2))
+print(is_even(3))
 
 
 
