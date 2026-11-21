@@ -1,13 +1,10 @@
-def is_even(number: int) -> bool:
-    """Четное ли число?"""
-    if number % 2 == 0:
-        return True
-    else:
-        return False
-print(is_even(2))
-print(is_even(3))
-
-
+def repeat_text(text,times):
+    """повторяет текст times раз"""
+    if times >= 0:
+        return text * times
+assert repeat_text("hello", 2) == "hellohello"
+print(repeat_text("hello", 2))
+print(repeat_text("lol", 3))
 
 
 
