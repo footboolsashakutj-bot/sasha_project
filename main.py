@@ -1,14 +1,8 @@
-def max_of_two(a,b)->int:
-    """Возвращает большее число"""
-    if a>b:
-        return a
-    else:
-        return b
-assert max_of_two(2,3)==3
-assert max_of_two(31,-3)==31
-assert max_of_two(-1,1)==1
-print(max_of_two(2,3))
-print(max_of_two(31,-3))
+def format_card(name:str,city:str,age:int)-> str:
+    """Возвращает информацию о человеке"""
+    return f"Имя: {name}\nгород: {city}\nвозраст: {age}"
+assert format_card("Joe", "Moscow", 24) == "Имя: Joe\nгород: Moscow\nвозраст: 24"
+print(format_card("Joe", "Moscow", 24))
 
 
 
